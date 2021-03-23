@@ -10,10 +10,9 @@ public class BoxUtil {
         }
     }
 
-    public static <T> void printElementFromTwoBoxes(final Box<T> box) {
-        T element = box.get();
-        Box<T> helpBox = (Box<T>) element;
-        System.out.println(helpBox.get());
+    public static <T> void printElementFromTwoBoxes(final Box<Box> box) {
+        Box<T> secondBox = box.get();
+        System.out.println(secondBox.get());
     }
 
     public static <T> void printElementFromBoxes(final Box<T> box) {
